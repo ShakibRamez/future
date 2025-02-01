@@ -1,6 +1,6 @@
 // ریزش اسم Marwa
 const nameContainer = document.getElementById('name-container');
-const name = "I Love You Marwa"; // اسم مورد نظر
+const name = "I Love You Marwa ma"; // اسم مورد نظر
 const numberOfNames = 50; // تعداد تکرار اسم
 
 function createFallingNames() {
