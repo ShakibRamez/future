@@ -154,7 +154,7 @@ h1 {
     50% { border-color: #fff; }
 }
 
-#surprise-button {
+#push-button {
     background-color: #e91e63;
     color: #fff;
     border: none;
@@ -162,11 +162,23 @@ h1 {
     font-size: 1.2em;
     border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
-#surprise-button:hover {
-    background-color: #c2185b;
+#push-button:active {
+    transform: scale(0.95); /* افکت فشار دادن */
+}
+
+#love-message {
+    margin-top: 20px;
+    font-size: 2em;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#love-message.show {
+    opacity: 1;
 }
 
 .extra-content {

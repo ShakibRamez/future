@@ -1,6 +1,6 @@
 // ریزش اسم Marwa
 const nameContainer = document.getElementById('name-container');
-const name = "i Love You Marwa"; // اسم مورد نظر
+const name = "Marwa"; // اسم مورد نظر
 const numberOfNames = 50; // تعداد تکرار اسم
 
 function createFallingNames() {
@@ -52,8 +52,14 @@ window.onload = () => {
     backgroundMusic.play();
 };
 
-// سوپرایز دکمه
-const surpriseButton = document.getElementById('surprise-button');
-surpriseButton.addEventListener('click', () => {
-    alert("عزیزم، تو بهترینی! منتظر یه سوپرایز بزرگ‌تر باش! 🎉");
+// دکمه فشار دادن
+const pushButton = document.getElementById('push-button');
+const loveMessage = document.getElementById('love-message');
+
+pushButton.addEventListener('click', () => {
+    pushButton.classList.add('animate__animated', 'animate__bounceOut'); // انیمیشن خروج دکمه
+    setTimeout(() => {
+        pushButton.style.display = 'none'; // مخفی کردن دکمه
+        loveMessage.classList.add('show'); // نمایش پیام "دوستت دارم"
+    }, 500); // زمان انیمیشن
 });
